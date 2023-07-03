@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Your Voice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <div class="main">
+            <h1>Pitch</h1>
+            <p>Volume</p>
+        <input id="volume" type="range" min="0" max="1" step="0.1" value="0.5"/>
+        <button onclick="webaudio_tooling_obj()">Start</button>
+        <button onclick="stop()">Stop</button>
+
+        <div id="pitch">
+            <table>
+                <tr>
+                    <td>Frequency</td>
+                    <td id="freq"></td>
+                </tr>
+                <tr>
+                    <td>Note</td>
+                    <td id="note"></td>
+                </tr>
+            </table>
+            
+        </div>
+
+        </div>
+    </div>
+    <script>
+        let MAIN_FREQ;
+    </script>
+    <script src="p5.min.js"></script>
+    <script src="main.js"></script>
+    <script src="getaudio.js"></script>
+</body>
+</html>

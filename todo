@@ -1,0 +1,4 @@
+- Rewrite getaudio.js
+- Implement the auto scroll system
+- Classify frequency into notes
+- Implement the note grade
